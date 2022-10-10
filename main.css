@@ -12,7 +12,6 @@ body {
 
 
   /* HEADER */
-
 header {
     background-color: #466995;
     border-bottom: 1px solid #466995;
@@ -32,18 +31,6 @@ header {
     margin-bottom: 30px;
   }
   
-  /* TEXTS */
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  a:hover {
-    color: #000;
-    text-transform: lowercase;
-    font-weight: 600;
-  }
-
   ul {
     margin: 30px auto;
     padding: 0 20px;
@@ -80,15 +67,17 @@ header {
     font-weight: 100;
     margin: 0 auto 20px auto;
   }
-  
-  h3 {
-    color: #466995;
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 30px;
+
+  /* TEXTS */
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a:hover {
+    color: #000;
+    text-transform: lowercase;
+    font-weight: 600;
   }
   
   h4 {
@@ -102,47 +91,88 @@ header {
     padding-bottom: 5px;
   }
   
+  h4 {
+    font-weight: 500;
+  }
+
   p {
     color: #333;
     font-family: 'Varela Round', sans-serif;
     font-size: 18px;
   }
   
-  
+  /* QUESTIONS */
   .question {
     text-align: center;
     position: relative;
     top: 40px;
   }
-  
+
+  /* ANSWERS BUTTONS & ACTIONS*/
   .answer {
     border: 1px solid #466995;
     margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px;
     display: inline-block;
   }
   
+  .answer h3 {
+    color: #466995;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 30px;
+    text-decoration: underline;
+  }
+
+  .answer h3:hover {
+    text-decoration: none;
+  }
+
   .answer:hover {
     background: #C0D6DF;
-    color: #FFF;
+  }
+
+  .answer:active {
+    box-shadow: 0px 0px;
+    background-color: #C0D6DF;
+    color: #fff;
+  }
+
+  .answer h3:active {
+    color: #000;
+    font-size: larger;
+    font-weight: 700;
   }
 
 /* FOOTER */
   footer {
     background-color: #DBE9EE;
     text-align: center;
-    height: 100px;
+    height: auto;
   }
 
   .thanks {
-    margin-top: 50px;
+    margin-top: 60px;
+    padding-top: 10px;
+    color: rgb(83, 81, 81);
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
   }
 
   .attribute p {
+    position: relative;
+    top: 35px;
     display: inline-block;
-    height: auto;
-    width: 100%;
-    font-size: 18px;
+    height: 1.5em;
+    width: auto;
+    font-size: 16px;
     color: #DF5000;
+    border: 0px solid #DF5000;
+    border-radius: 10px;
     background-color: antiquewhite;
-    padding: 2px 0;
+    padding: 6px 10px;
   }
