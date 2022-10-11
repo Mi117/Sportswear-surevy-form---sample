@@ -129,11 +129,9 @@ header {
   }
 
   .answer h3:hover {
-    text-decoration: none;
-  }
-
-  .answer:hover {
     background: #C0D6DF;
+    text-decoration: none;
+    cursor: pointer;
   }
 
   .answer:active {
@@ -146,6 +144,34 @@ header {
     color: #000;
     font-size: larger;
     font-weight: 700;
+  }
+
+  /* SUBMIT BTN */  
+  .submit-btn button {
+    position: relative;
+    left: 594px;
+    top: 60px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #C0D6DF;
+    color: #000;
+    border: 1px solid #5f7e8a;
+    border-radius: 10px;
+    line-height: 2.5em;
+    padding: 0 30px;
+  }
+
+  button:hover {
+    color: #466995;
+    cursor: pointer;
+    text-transform: uppercase;
+    animation-delay: 3ms;
+    box-shadow: 0px 2px;
   }
 
 /* FOOTER */
